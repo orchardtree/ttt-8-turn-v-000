@@ -33,7 +33,7 @@ def valid_move?(board, index)
 end
 
 #move
-def move(board, index, char)
+def move(board, index, char = "X")
 
   board[index] = char
 
@@ -48,7 +48,7 @@ def turn(board)
   valid_move = valid_move?(board, index)
 
   if valid_move
-    move(board, index, char)
+    move(board, index)
     display_board(board)
   else
     turn(board)
