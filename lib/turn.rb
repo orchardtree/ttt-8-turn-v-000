@@ -48,6 +48,8 @@ def turn(board)
 
   input_to_index(integer)
 
-  display_board(board)
+  if valid_move
+    display_board(board)
+  end
 
 end
